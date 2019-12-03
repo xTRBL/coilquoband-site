@@ -8,6 +8,7 @@ body {
 	font-family: 'Cousine', monospace;
 	margin-top: 60px;
 	color: rgb(85, 85, 85);
+	transition: background-color .5s;
 }
 
 nav.navbar {
@@ -15,8 +16,80 @@ nav.navbar {
 	padding-left: 0;
 }
 
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link{
+	color: #800020;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: #800020;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: black;
+}
+
+.mobile-menu i:hover {
+	color: #800020;
+	transition: 0.3s;
+}
+
 nav button.navbar-toggler {
 	border: none;
+}
+
+ /* The side navigation menu */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1032;
+  top: 0;
+  left: 0;
+  background-color: #f4f3e0;
+  overflow-x: hidden;
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+	transition: 0.3s;
+	font-size: 600;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .sidenav a.active {
+  color: #800020;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} 
+
+section {
+	margin-bottom: 5em;
 }
 
 section.main-section {
@@ -25,7 +98,7 @@ section.main-section {
 
 section .section-title {
 	font-family: 'Rajdhani', sans-serif;
-	color: rgb(30, 30, 30);
+	color: black;
 	font-weight: 600;
 }
 
@@ -73,6 +146,59 @@ section .contact-form label span{
 section .contact-form button {
 	background-color: rgb(30, 30, 30);
 	border: 1px solid rgb(30, 30, 30);
+}
+
+#collapseOne .card-body:hover,  #collapseOne .card-body.active {
+	background:#800020;
+	cursor: pointer;
+	color:#fff;
+	transition: 0.5s;
+}
+
+#accordion, .play-button-box {
+	cursor: pointer;
+	color: black;
+}
+
+.music-player {
+	background-color: #fff;
+	box-shadow: 0 1px 4px rgba(0,0,0,.2);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.player .row:first-child {
+	height: 75px;
+}
+
+.play-button-box {
+	border-right: 1px solid #e0e0e0;
+	background: url('/assets/img/stealing-fire.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.b-border {
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.playlist-button {
+	border-left: 1px solid #e0e0e0;
+}
+
+.music-player .song-name{
+	font-size: 15px;
+}
+
+.music-player .artist-name {
+	font-size: 13px;
+}
+
+.playlist-box .song-info{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 13px;
 }
 
 footer {

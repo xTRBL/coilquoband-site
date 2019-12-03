@@ -13,33 +13,242 @@
 <body>
 	<!-- Navbar  -->
 	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class=""><i class="fas fa-bars"></i></span>
+		<button class="navbar-toggler" type="button" id="click-open">
+			<span class="mobile-menu"><i class="fas fa-bars"></i></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNav">
-		  <ul class="navbar-nav mx-auto">
-			<li class="nav-item active">
-			  <a class="nav-link" href="index.html">HOME</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="about.html">ABOUT</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="contact.html">CONTACT</a>
-			</li>
-		  </ul>
+			<ul class="navbar-nav mx-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">HOME</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="about.html">ABOUT</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">CONTACT</a>
+				</li>
+			</ul>
 		</div>
 	</nav>
+
+	<div id="mySidenav" class="sidenav text-center">
+		<a href="javascript:void(0)" class="closebtn">&times;</a>
+		<a class="nav-link" href="index.html">HOME</a>
+		<a class="nav-link active" href="about.html">ABOUT</a>
+		<a class="nav-link" href="contact.html">CONTACT</a>
+	</div>
 
 	<!-- Main Section  -->
 	<section class="about-section">
 		<div class="section-title text-center">
 			<h1>COILQUO</h1>
 		</div>
-		
+
 		<div class="container mx-auto no-gutters">
+			<!-- Custom Music Player -->
+			<div class="music-player col-md-9 p-0 mx-auto my-5">
+				<div class="player col-md-12 text-center">
+					<div class="row">
+						<div class="col-2 b-border play-button-box">
+							<!-- Play Button -->
+							<div class="play-pause-holder h-100 d-flex">
+								<div class="my-auto mx-auto">
+									<a id="play-pause-button" class="fa fa-play"></a>
+								</div>
+							</div>
+						</div>
+						<!-- Track/Artist Name -->
+						<div class="col-8 b-border">
+							<div class="song-name text-center h-100 d-flex">
+								<div class="name-holder my-auto mx-auto ">
+									<div class="song-name">
+										Stealing Fire
+									</div>
+									<div class="artist-name">
+										Coilquo
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Playlist Buttom -->
+						<div class="col-2 p-0 b-border">
+							<div class="playlist-button h-100" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+								aria-controls="collapseOne">
+								<div class="accordion h-100 d-flex" id="accordion">
+									<div class="playlist-icon-holder my-auto mx-auto">
+										<i class="fas fa-list"></i>
+									</div>
+								</div>
+								</li>
+							</div>
+							<!-- End Custom Music Player -->
+						</div>
+					</div>
+					<!-- Playlist Songs -->
+					<div class="row">
+						<div id="collapseOne" class="playlist-box collapse col-12 p-0" aria-labelledby="headingOne"
+							data-parent="#accordion">
+							<div class="card-body active b-border">
+								<div class="song-info d-flex" data-song="songOne" data-name="Stealing Fire">
+									<div class="number px-3">
+										1
+									</div>
+									<div class="song">
+										Stealing Fire
+									</div>
+								</div>
+							</div>
+							<div class="card-body b-border">
+								<div class="song-info d-flex" data-song="songTwo" data-name="Lock Me Up">
+									<div class="number px-3">
+										2
+									</div>
+									<div class="song">
+										Lock Me Up
+									</div>
+								</div>
+							</div>
+							<div class="card-body b-border">
+								<div class="song-info d-flex" data-song="songThree" data-name="Leaving in the Evening">
+									<div class="number px-3">
+										3
+									</div>
+									<div class="song">
+										Leaving in the Evening (Explicit)
+									</div>
+								</div>
+							</div>
+							<div class="card-body b-border">
+								<div class="song-info d-flex" data-song="songFour" data-name="Train Delay">
+									<div class="number px-3">
+										4
+									</div>
+									<div class="song">
+										Train Delay
+									</div>
+								</div>
+							</div>
+							<div class="card-body b-border">
+								<div class="song-info d-flex" data-song="songFive" data-name="I Think I Think">
+									<div class="number px-3">
+										5
+									</div>
+									<div class="song">
+										I Think I Think (Explicit)
+									</div>
+								</div>
+							</div>
+							<div class="card-body b-border">
+								<div class="song-info d-flex" data-song="songSix" data-name="Maybe It's the Sun">
+									<div class="number px-3">
+										6
+									</div>
+									<div class="song">
+										Maybe It's the Sun
+									</div>
+								</div>
+							</div>
+							<div class="card-body b-border">
+								<div class="song-info d-flex" data-song="songSeven" data-name="Mischievous">
+									<div class="number px-3">
+										7
+									</div>
+									<div class="song">
+										Mischievous (Explicit)
+									</div>
+								</div>
+							</div>
+							<div class="card-body b-border">
+								<div class="song-info d-flex" data-song="songEight" data-name="Living Proof">
+									<div class="number px-3">
+										8
+									</div>
+									<div class="song">
+										Living Proof
+									</div>
+								</div>
+							</div>
+							<div class="card-body b-border">
+								<div class="song-info d-flex" data-song="songNine" data-name="No Time">
+									<div class="number px-3">
+										9
+									</div>
+									<div class="song">
+										No Time
+									</div>
+								</div>
+							</div>
+							<div class="card-body b-border">
+								<div class="song-info d-flex" data-song="songTen" data-name="Wicked War">
+									<div class="number px-3">
+										10
+									</div>
+									<div class="song">
+										Wicked War (Explicit)
+									</div>
+								</div>
+							</div>
+							<div class="card-body b-border">
+								<div class="song-info d-flex" data-song="songEleven" data-name="Born a Bitch">
+									<div class="number px-3">
+										11
+									</div>
+									<div class="song">
+										Born a Bitch (Explicit)
+									</div>
+								</div>
+							</div>
+							<div class="card-body b-border">
+								<div class="song-info d-flex" data-song="songTwelve" data-name="Something CLoser">
+									<div class="number px-3">
+										12
+									</div>
+									<div class="song">
+										Something Closer
+									</div>
+								</div>
+							</div>
+							<div class="card-body b-border">
+								<div class="song-info d-flex" data-song="songThirteen" data-name="Compulsive Necessity">
+									<div class="number px-3">
+										13
+									</div>
+									<div class="song">
+										Compulsive Necessity (Explicit)
+									</div>
+								</div>
+							</div>
+							<div class="card-body b-border">
+								<div class="song-info d-flex" data-song="songFourteen" data-name="Rosemary">
+									<div class="number px-3">
+										14
+									</div>
+									<div class="song">
+										Rosemary
+									</div>
+								</div>
+							</div>
+							<div class="card-body b-border">
+								<div class="song-info d-flex" data-song="songFifteen" data-name="Runned Over">
+									<div class="number px-3">
+										15
+									</div>
+									<div class="song">
+										Runned Over
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<div class="sub-title list-group-item text-center mx-auto col-md-9 col-12">
 				<h2 class="m-0">About</h2>
+			</div>
+			
+			<div class="about-img list-group-item col-12 col-md-9 mx-auto p-0">
+				<img src="/assets/img/about.jpg" alt="About Image" class="w-100 h-100">
 			</div>
 
 			<div class="list-group-item section-text col-md-9 col-12 mx-auto px-3">
@@ -65,5 +274,6 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="assets/scripts/main.js"></script>
 </body>
 </html>
