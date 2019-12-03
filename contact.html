@@ -43,20 +43,20 @@
 				<div class="col contact-form">
 					<form class="text-left" name="contact" netlify method="POST">
 							<div class="form-group col-md-6">
-								<label for="contactName">Name	<span>(required)</span></label>
-								<input type="string" class="form-control" id="contactName" placeholder="">
+								<label for="name">Name	<span>(required)</span></label>
+								<input type="string" name="name" class="form-control" id="contactName" placeholder="">
 							</div>
 							<div class="form-group col-md-6">
-								<label for="contactEmail">Email	<span>(required)</span></label>
-								<input type="email" class="form-control" id="contactEmail" placeholder="">
+								<label for="email">Email	<span>(required)</span></label>
+								<input type="email" name="email" class="form-control" id="contactEmail" placeholder="">
 							</div>
 							<div class="form-group col-md-6">
-								<label for="contactWebsite">Website</label>
-								<input type="url" class="form-control" id="contactWebsite" placeholder="">
+								<label for="website">Website</label>
+								<input type="url" name="website" class="form-control" id="contactWebsite" placeholder="">
 							</div>
 							<div class="form-group col-md-12">
-								<label for="contactComments">Comments <span>(required)</span></label>
-								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+								<label for="message">Comments <span>(required)</span></label>
+								<textarea class="form-control" name="message" id="contactComments" rows="5"></textarea>
 							</div>
 							<button type="submit" class="btn btn-primary mx-3">Submit</button>
 					</form>
