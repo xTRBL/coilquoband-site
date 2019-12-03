@@ -13,7 +13,7 @@
 <body>
 	<!-- Navbar  -->
 	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
-		<button class="navbar-toggler" type="button" onclick="openNav()">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		  <span class=""><i class="fas fa-bars"></i></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNav">
@@ -32,28 +32,48 @@
 	</nav>
 
 	<!-- Main Section  -->
-	<section class="main-section">
+	<section class="about-section">
 		<div class="section-title text-center">
 			<h1>COILQUO</h1>
 		</div>
 
-		<div class="container">
-			<div class="col band-image text-center mx-auto">
-				<img src="" alt="Band Image">
+		<div class="container mx-auto no-gutters">
+			<div class="sub-title list-group-item text-center mx-auto col-md-9 col-12">
+				<h2 class="m-0">Contact</h2>
+				<div class="col contact-form">
+					<form class="text-left">
+							<div class="form-group col-md-6">
+								<label for="contactName">Name	<span>(required)</span></label>
+								<input type="string" class="form-control" id="contactName" placeholder="">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="contactEmail">Email	<span>(required)</span></label>
+								<input type="email" class="form-control" id="contactEmail" placeholder="">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="contactWebsite">Website</label>
+								<input type="url" class="form-control" id="contactWebsite" placeholder="">
+							</div>
+							<div class="form-group col-md-12">
+								<label for="contactComments">Comments <span>(required)</span></label>
+								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+							</div>
+							<button type="submit" class="btn btn-primary mx-3">Submit</button>
+					</form>
+				</div>
 			</div>
 		</div>
 	</section>
 
-	<footer class="page-footer">
+	<footer class="page-footer fixed-bottom">
 		<div class="footer-copyright col-12 px-3 py-3">
 			<span class="copyright">© 2020 Copyright: COILQUOBAND</span>
-			<span class="developer">Developed by: <a href="https://gilfigueroa.co" target="_blank">xTRBL</a></span>
+			<span class="developer">Developed by: <a href="http://gilfigueroa.co" target="_blank">xTRBL</a></span>
 		</div>
 	</footer>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	<script src="assets/scripts/main.js"></script>
 </body>
 </html>
