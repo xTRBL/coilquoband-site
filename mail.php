@@ -2,7 +2,9 @@
 $email = $_POST['contactEmail'];
 $message = $_POST['contactComments'];
 $website = $_POST['contactWebsite'];
-$formcontent="From: $name \n Website: $website \nMessage: $message";
+$formcontent="From: $name \n 
+              Website: $website \n
+              Message: $message";
 $recipient = "gil@crankshiftnyc.com";
 $subject = "Contact Form";
 $mailheader = "From: $email \r\n";
