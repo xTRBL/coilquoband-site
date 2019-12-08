@@ -48,6 +48,7 @@ window.onload = function() {
       audio = new Audio(songPath + playlist[songKey])
       audio.load();
       changeMusicState();
+      $('#collapseOne').collapse('toggle')
     }
   })
 
@@ -58,6 +59,14 @@ window.onload = function() {
 
   $('.closebtn').on('click', function(){
     document.getElementById("mySidenav").style.width = "0";
+  })
+
+  $('.social-open').on('click', function(){
+    document.getElementById("mySocialnav").style.width = "100%";
+  })
+
+  $('.socialnav .closebtn').on('click', function(){
+    document.getElementById("mySocialnav").style.width = "0";
   }) 
 };
 
