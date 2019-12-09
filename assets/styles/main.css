@@ -188,6 +188,14 @@ section .contact-form button {
 	background-size: cover;
 }
 
+.close-playlist-chevron {
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	min-height: 1px;
+	padding: 1.25rem;
+	cursor: pointer;
+}
+
 .b-border {
 	border-bottom: 1px solid #e0e0e0;
 }
