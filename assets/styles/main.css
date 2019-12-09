@@ -61,6 +61,11 @@ nav button.navbar-toggler {
 	right: 0;
 }
 
+.btn-primary:hover {
+	background-color: #800020;
+	border-color: #800020;
+}
+
 .sidenav a, .socialnav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
